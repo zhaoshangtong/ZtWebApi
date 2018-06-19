@@ -17,6 +17,7 @@ namespace DbModels.WeixinModels
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int weixin_template_id { get; set; }
         [ForeignKey("weixin_id")]
+        public weixin_list weixin { get; set; }
         public Nullable<int> weixin_id { get; set; }
         ///<summary>
         ///微信模版编号  

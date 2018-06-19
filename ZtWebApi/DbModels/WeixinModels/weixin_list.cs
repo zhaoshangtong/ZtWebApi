@@ -62,5 +62,7 @@ namespace DbModels.WeixinModels
         public int user_count { get; set; }
         public DateTime? create_time { get; set; }
         public DateTime? update_time { get; set; }
+
+        //public string test { get; set; }
     }
 }

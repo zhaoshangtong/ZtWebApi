@@ -18,6 +18,7 @@ namespace DbModels.WeixinModels
         public int weixin_menus_id { get; set; }
         [Required]
         [ForeignKey("weixin_id")]
+        public weixin_list weixin { get; set; }
         public int weixin_id { get; set; }
         [Required]
         public int weixin_menu_parent_id { get; set; }
