@@ -52,9 +52,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EFMssqlCodeFirst\EFCodeFirst.cs" />
-    <Compile Include="Migrations\201806190901158_delweixintest.cs" />
-    <Compile Include="Migrations\201806190901158_delweixintest.Designer.cs">
-      <DependentUpon>201806190901158_delweixintest.cs</DependentUpon>
+    <Compile Include="Migrations\201806190925018_create_table.cs" />
+    <Compile Include="Migrations\201806190925018_create_table.Designer.cs">
+      <DependentUpon>201806190925018_create_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806190926331_update_weixin_list.cs" />
+    <Compile Include="Migrations\201806190926331_update_weixin_list.Designer.cs">
+      <DependentUpon>201806190926331_update_weixin_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806190934103_update_weixin_list1.cs" />
+    <Compile Include="Migrations\201806190934103_update_weixin_list1.Designer.cs">
+      <DependentUpon>201806190934103_update_weixin_list1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +80,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806190901158_delweixintest.resx">
-      <DependentUpon>201806190901158_delweixintest.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806190925018_create_table.resx">
+      <DependentUpon>201806190925018_create_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806190926331_update_weixin_list.resx">
+      <DependentUpon>201806190926331_update_weixin_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806190934103_update_weixin_list1.resx">
+      <DependentUpon>201806190934103_update_weixin_list1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

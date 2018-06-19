@@ -7,18 +7,18 @@ namespace DbModels.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class delweixintest : IMigrationMetadata
+    public sealed partial class update_weixin_list : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(delweixintest));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(update_weixin_list));
         
         string IMigrationMetadata.Id
         {
-            get { return "201806190901158_delweixintest"; }
+            get { return "201806190926331_update_weixin_list"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return Resources.GetString("Source"); }
+            get { return null; }
         }
         
         string IMigrationMetadata.Target

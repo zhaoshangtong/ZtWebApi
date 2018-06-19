@@ -39,6 +39,7 @@ namespace DbModels.WeixinModels
         [Required]
         [StringLength(255, ErrorMessage = "Appsecret太长")]
         public string appsecret { get; set; }
+
         [StringLength(255)]
         public string access_token { get; set; }
         /// <summary>
@@ -59,10 +60,8 @@ namespace DbModels.WeixinModels
         /// <summary>
         /// 关注人数
         /// </summary>
-        public int user_count { get; set; }
+        public int? user_count { get; set; }
         public DateTime? create_time { get; set; }
         public DateTime? update_time { get; set; }
-
-        //public string test { get; set; }
     }
 }

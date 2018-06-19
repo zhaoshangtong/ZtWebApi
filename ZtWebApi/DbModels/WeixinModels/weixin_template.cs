@@ -27,5 +27,8 @@ namespace DbModels.WeixinModels
         ///模板ID  
         ///</summary>
         public string tempid { get; set; }
+
+        public DateTime? create_time { get; set; }
+        public DateTime? update_time { get; set; }
     }
 }
