@@ -7,13 +7,13 @@ namespace DbModels.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class update_weixin_list : IMigrationMetadata
+    public sealed partial class mssql : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(update_weixin_list));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mssql));
         
         string IMigrationMetadata.Id
         {
-            get { return "201806190926331_update_weixin_list"; }
+            get { return "201806210754012_mssql"; }
         }
         
         string IMigrationMetadata.Source

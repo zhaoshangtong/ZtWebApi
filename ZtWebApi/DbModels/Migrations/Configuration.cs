@@ -9,7 +9,7 @@ namespace DbModels.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(DbModels.EFMssqlCodeFirst.EFCodeFirst context)

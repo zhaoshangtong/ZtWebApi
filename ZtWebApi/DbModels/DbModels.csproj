@@ -38,11 +38,26 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.8.8\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,17 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EFMssqlCodeFirst\EFCodeFirst.cs" />
-    <Compile Include="Migrations\201806190925018_create_table.cs" />
-    <Compile Include="Migrations\201806190925018_create_table.Designer.cs">
-      <DependentUpon>201806190925018_create_table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806190926331_update_weixin_list.cs" />
-    <Compile Include="Migrations\201806190926331_update_weixin_list.Designer.cs">
-      <DependentUpon>201806190926331_update_weixin_list.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806190934103_update_weixin_list1.cs" />
-    <Compile Include="Migrations\201806190934103_update_weixin_list1.Designer.cs">
-      <DependentUpon>201806190934103_update_weixin_list1.cs</DependentUpon>
+    <Compile Include="EFMysql\EFMysql.cs" />
+    <Compile Include="Migrations\201806210754012_mssql.cs" />
+    <Compile Include="Migrations\201806210754012_mssql.Designer.cs">
+      <DependentUpon>201806210754012_mssql.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,14 +88,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806190925018_create_table.resx">
-      <DependentUpon>201806190925018_create_table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806190926331_update_weixin_list.resx">
-      <DependentUpon>201806190926331_update_weixin_list.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806190934103_update_weixin_list1.resx">
-      <DependentUpon>201806190934103_update_weixin_list1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201806210754012_mssql.resx">
+      <DependentUpon>201806210754012_mssql.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
