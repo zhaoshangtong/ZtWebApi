@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbContextFactory\DbContextFactory.cs" />
     <Compile Include="EFMssqlCodeFirst\EFCodeFirst.cs" />
     <Compile Include="EFMysql\EFMysql.cs" />
     <Compile Include="Migrations\201806210754012_mssql.cs" />

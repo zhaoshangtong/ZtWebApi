@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbModels", "DbModels\DbMode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZtWebApi", "ZtWebApi\ZtWebApi.csproj", "{DBAD9508-A65E-436F-8A3C-5D1886B16C18}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{EEF733D6-14E8-45F9-8A45-B93000065483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{B4821298-4C56-4267-B9C7-AE8E41A52E3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{DBAD9508-A65E-436F-8A3C-5D1886B16C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBAD9508-A65E-436F-8A3C-5D1886B16C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBAD9508-A65E-436F-8A3C-5D1886B16C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4821298-4C56-4267-B9C7-AE8E41A52E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4821298-4C56-4267-B9C7-AE8E41A52E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4821298-4C56-4267-B9C7-AE8E41A52E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4821298-4C56-4267-B9C7-AE8E41A52E3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{02587B36-CEBD-4E90-9A06-CC49006E66F4} = {0DF12512-5F50-4DA5-B1BF-3830B51BC240}
 		{88D6030A-B245-4E7F-8BAC-130CDA235904} = {5E734FBF-8F51-4D9C-8C4D-0B59D98B8329}
+		{B4821298-4C56-4267-B9C7-AE8E41A52E3D} = {EEF733D6-14E8-45F9-8A45-B93000065483}
 	EndGlobalSection
 EndGlobal
